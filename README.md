@@ -528,3 +528,16 @@ int recent_event_count;        // 最近已完成就诊事件列表
 【参考示例】
 提示音时长：1秒
 ```
+
+---
+
+## 作者与职责
+
+- **作者**：吴振
+- **定位**：LVGL 医疗叫号终端（Linux 应用 + GUI 方向项目）
+- **本人负责**：全部实现
+  - LVGL v8 + Linux framebuffer 移植，多字号中文字库制作
+  - 叫号 / 患者管理 / AI 助手 / 统计看板四界面开发
+  - 板端 HTTP 客户端每 5s 与自研 tiny-httpd 同步（cJSON 解析）
+  - 集成 DeepSeek AI 对话接口
+- **联调说明**：与 tiny-httpd 仓库配合构成「终端 + 服务端」完整系统
